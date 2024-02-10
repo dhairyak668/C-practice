@@ -1,3 +1,5 @@
+all: bubbleSort arrays hypotenus stringFunctions structs enums pointers
+
 bubbleSort: bubbleSort.c
 		gcc bubbleSort.c -o bubbleSort -lm
 
@@ -12,8 +14,12 @@ stringFunctions: stringFunctions.c
 structs: structs.c
 		gcc structs.c -o structs -lm
 
-all: bubbleSort arrays hypotenus stringFunctions structs
+enums: enums.c
+		gcc enums.c -o enums -lm
+
+pointers: pointers.c
+		gcc pointers.c -o pointers -lm
 
 clean:
-	rm -f arrays bubbleSort hypotenus stringFunctions structs
+	rm -f arrays bubbleSort hypotenus stringFunctions structs enums pointers
 
